@@ -1,0 +1,97 @@
+a = True
+b = False
+print(type(a))
+print(type(b))
+
+print(bool('python'),bool(""))
+print(bool({1,2,3}), bool([]))
+print(bool((1, 2)), bool (( )))
+print(bool({"1" : 1}), bool ({}))
+print(bool(-3), bool(0))
+print(bool(None))
+
+if
+
+elif
+
+else:
+
+if True:
+    if False:
+        print("A")
+    else:
+        print("B")
+else:
+    if True:
+        print("C")
+    else:
+        print("D")
+print("E")
+
+a = 3
+b = 4
+if a >= b:
+    print(a)
+
+a = int(input())
+b = int(input())
+
+if a > b:
+    print("a가 b보다 큽니다")
+elif a < b:
+    print("a가 b보디 작습니다")
+elif a == b:
+    print("a와 b가 같습니다")
+
+a = 3
+b = 4
+
+print(bool(a and b))
+
+a = 3
+b = 4
+
+print(bool(a or b))
+
+a = 3
+b = 4
+
+print(bool(a not b))
+
+a = ("A")
+b = ("python")
+if a in ["A","B","C"]:
+    print(a)
+
+if " y" not in b:
+    print("p")
+else:
+    print(b)
+
+H, M = input().split()
+H = int(H)
+M = int(M)
+timer = int(input("timer: "))
+M += timer
+
+if M >= 60:
+    H += M // 60
+    M = M % 60
+    if H >= 24:
+        H = H % 24
+
+print(H,M)
+
+n = int(input("n: "))
+
+m = n
+cnt = 0
+
+while True:
+    part1 = m % 10
+    part2 = (m // 10 + m % 10) % 10
+    m = part1 * 10 + part2
+    cnt += 1
+    if m == n:
+        break
+print(cnt)
